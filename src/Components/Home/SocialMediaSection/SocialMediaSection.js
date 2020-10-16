@@ -7,7 +7,7 @@ import airbnb from '../../../images/logos/airbnb.png'
 
 const SocialMediaSection = () => {
     return (
-        <div className="text-center mt-3">
+        <div className="text-center mt-5">
             <a target="_blank" href="https://slack.com/">
                 <img className="social-media-image mx-5 my-3" src={slack} alt="" />
             </a>
