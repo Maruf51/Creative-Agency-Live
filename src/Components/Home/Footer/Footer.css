@@ -1,0 +1,25 @@
+.footer {
+    background-color: #FBD062;
+}
+
+.footer-input {
+    width: 90%;
+    padding: 18px 20px;
+    border: none;
+    margin: 1%;
+    margin-left: 5%;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.footer-p {
+    line-height: 1.7;
+}
+
+textarea {
+    height: 210px;
+}
+
+.copyright {
+    font-size: 12px;
+}

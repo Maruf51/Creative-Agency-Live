@@ -1,0 +1,37 @@
+.pending {
+    background-color: #FFE3E3;
+    color: #FF4B4B;
+    padding: 10px 25px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.done {
+    background-color: #C6FFE0;
+    color: #009444;
+    padding: 10px 25px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.ongoing {
+    background-color: #ffebc5;
+    color: #FFBD3E;
+    padding: 10px 25px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 21px;
+}
+
+.userService {
+    padding-right: 1.5rem;
+}

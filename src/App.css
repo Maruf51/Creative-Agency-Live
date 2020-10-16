@@ -1,0 +1,21 @@
+p {
+  font-size: 14px;
+}
+
+.green-text {
+  color: #7AB259;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 31px;
+}
+
+.font-700 {
+  font-weight: 700;
+}
+
+.social-media-image {
+  height: 40px;
+  cursor: pointer;
+}

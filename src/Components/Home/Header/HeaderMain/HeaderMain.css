@@ -1,0 +1,22 @@
+.header-h1 {
+    font-weight: 700;
+    word-spacing: 2px;
+}
+
+.header-frame {
+    width: 80%;
+}
+
+.header-main-container {
+    height: auto;
+    padding-bottom: 60px !important;
+}
+
+.header-main-text-area {
+    margin-top: 50px !important;
+}
+
+.header-main-image-area {
+    margin-top: 50px !important;
+    text-align: center;
+}

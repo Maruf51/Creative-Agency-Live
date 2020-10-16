@@ -1,0 +1,24 @@
+.our-works {
+    background-color: #111430;
+    height: auto;
+    padding-bottom: 65px !important;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #ffb700 !important;
+}
+
+.slick-dots li button:before {
+    color: #ffb700 !important;
+    font-size: 9px !important;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: #6dc3ff !important;
+}
+
+.carousel-image {
+    width: 90%;
+    height: auto;
+    margin: auto;
+}

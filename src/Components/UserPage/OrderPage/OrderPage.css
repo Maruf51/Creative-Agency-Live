@@ -1,0 +1,107 @@
+.user-page {
+    background: #F4F7FC;
+    display: flex;
+}
+
+.userPageLogo {
+    width: 150px;
+    margin: 50px 0 30px 0;
+}
+
+.userPageLeftSide {
+    width: 21%;
+    height: 100vh;
+    padding-left: 5%;
+    background: white;
+}
+
+.userPageRightSide {
+    width: 80%;
+}
+
+/* .adminPageLogo {
+    width: 16px;
+    margin-right: 10px;
+} */
+.color-active {
+    color: #009444;
+}
+
+.color-active:hover {
+    color: #009444;
+}
+
+.inactive-color {
+    color: black;
+}
+
+.inactive-color:hover {
+    color: black;
+}
+
+.rightSideListText {
+    background: white;
+    padding: 20px 40px;
+    font-size: 23px;
+    font-weight: 700;
+}
+
+.rightSideMain {
+    margin: 25px;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.emptyEvent {
+    height: 100vh;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.order-input {
+    border: none;
+    padding: 25px 20px;
+    font-size: 15px;
+    color: tomato;
+}
+
+.order-textarea {
+    padding: 13px 20px;
+    height: 100px !important;
+}
+
+#photoUpload {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.order-photo-upload {
+    width: 100%;
+    border: 1px solid #009444;
+    margin: 0;
+    padding: 13px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    color: #009444;
+    font-weight: 500;
+    background: #DEFFED;
+    cursor: pointer;
+}
+
+.order-btn {
+    padding: 13px 50px;
+    font-size: 14px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

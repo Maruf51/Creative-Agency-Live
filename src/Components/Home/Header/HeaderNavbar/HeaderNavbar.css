@@ -1,0 +1,51 @@
+
+
+.homeLink {
+    font-weight: 500;
+    border-bottom: 4px solid #76AC56;
+    text-decoration: none;
+}
+
+.navbarLink {
+    margin: 0;
+    padding: 0;
+    height: 0;
+}
+
+.navItem {
+    display: flex;
+    align-items: baseline;
+}
+
+.login-btn a {
+    color: white;
+}
+
+.login-btn a:hover {
+    text-decoration: none;
+}
+
+.loggedInUserName {
+    font-weight: 700;
+    font-size: 16px;
+    color: tomato;
+}
+
+.loggedInUserPhoto {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.navbar-link {
+    margin: 0;
+    color: black;
+    height: 25px;
+}
+
+.navbar-link:hover {
+    border-bottom: 4px solid #76AC56;
+    text-decoration: none;
+    color: black;
+    height: 25px;
+}
