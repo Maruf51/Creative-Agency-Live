@@ -13,11 +13,16 @@ import UserServiceList from './UserServiceList/UserServiceList';
 const ServiceList = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const [userOrdered, setUserOrdered] = useState([])
+    // for the spinner
+    const [getData, setGetData] = useState(null)
     // for getting user ordered service
     useEffect(() => {
         fetch(`https://obscure-plains-54568.herokuapp.com/getUserOrder/?email=${loggedInUser.email}`)
         .then(response => response.json())
-        .then(data => setUserOrdered(data))
+        .then(data => {
+            setUserOrdered(data)
+            setGetData(data)
+        })
     }, [])
     return (
         
@@ -49,7 +54,7 @@ const ServiceList = () => {
                     <h3 className="rightSideListText">Service list</h3>
                     <div className="rightSideMain row pr-0 pl-0">
                         {
-                            userOrdered.length === 0 && <button className="btn btn-primary m-auto" type="button" disabled>
+                            getData === null && <button className="btn btn-primary m-auto" type="button" disabled>
                             <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                             Loading...
                           </button>
