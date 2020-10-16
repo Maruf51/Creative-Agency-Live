@@ -2,7 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import './OrderPage.css';
 import logo from '../../../images/logos/logo.png'
 import { useForm } from "react-hook-form";
-import { Link } from 'react-router-dom';
+import { Link, useHistory, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart, faBriefcase, faCommentDots } from '@fortawesome/free-solid-svg-icons'
 import { Button } from 'react-bootstrap';
@@ -12,6 +12,10 @@ import { useState } from 'react';
 // import plusLogo from '../../images/logos/plus 1.png'
 
 const OrderPage = () => {
+    let location = useLocation();
+    let history = useHistory();
+    let { from } = { from: { pathname: "/user/service-list" } };
+
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const [selectedService, setSelectedService] = useState({})
     // for getting the service that user selected
@@ -37,7 +41,8 @@ const OrderPage = () => {
         .then(res => res.json())
         .then(data => {
             if(data.insertedCount){
-                alert('Your Request has been sent.')
+                alert('Your order has been sent. Please wait for the admin to response')
+                history.replace(from);
             }
         })
     };
